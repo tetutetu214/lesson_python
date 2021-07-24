@@ -25,3 +25,4 @@
 #   hp -= damage
 #   print("残りのHPは、" + str(hp) + "残っているぞ")
 # print ("そして俺の冒険は終わった")
+
