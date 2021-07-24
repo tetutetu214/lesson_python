@@ -22,3 +22,12 @@ print(team[0])
 for i in team:
 	print(i)
 
+#変数で読み込む
+#rstripで改行を削除している
+line = input().rstrip()
+print(line)
+#配列で読み込む
+#改行を削除した値を、[,]で分割してリストする
+line = input().rstrip().split(",")
+print(line)
+
