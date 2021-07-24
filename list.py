@@ -17,4 +17,8 @@ team[3] = "ため"
 print(team)
 
 team.pop(3)
-print(team)
+print(team[0])
+
+for i in team:
+	print(i)
+
