@@ -31,3 +31,30 @@ print(line)
 line = input().rstrip().split(",")
 print(line)
 
+#複数行（行数が不明の場合は）readlineを利用する
+#これでは一行しか格納できない
+line = input().rstrip()
+print(line)
+
+#ここから複数行
+#何行も読み込むための、readlinesを呼び出すためのsystem standird in とう名称
+import sys
+for line in sys.stdin.readlines():
+  print(line)
+
+#今度は読み込んだ複数業をリストに追加するために
+#appendは配列の中に取り組む
+import sys
+  array = []
+    for line in sys.stdin.readlines():
+			array.append(line.rstrip())
+print(array)
+
+# coding: utf-8
+# 複数行のカンマ区切りデータを出力する
+
+import sys
+for line in sys.stdin.readlines():
+	# ここに、文字列を分割して、出力するコードを書く
+	enemy = line.rstrip().split(",")
+	print(enemy[0] + "が" +enemy[1] + "匹現れた")
