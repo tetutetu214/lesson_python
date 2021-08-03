@@ -34,7 +34,7 @@ num = ["one","two","three","four","five"]
 for i in num:
     print(i)
 
-
+#受け取った数値を縦に表示
 str = input().rstrip().split()
 for i in str:
  print(i)
