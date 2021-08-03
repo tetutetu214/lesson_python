@@ -33,3 +33,8 @@ for i in range(1000):
 num = ["one","two","three","four","five"]
 for i in num:
     print(i)
+
+
+str = input().rstrip().split()
+for i in str:
+ print(i)
