@@ -28,3 +28,8 @@ print(i)
 for i in range(1000):
   i = input()
   print(i)
+
+
+num = ["one","two","three","four","five"]
+for i in num:
+    print(i)
