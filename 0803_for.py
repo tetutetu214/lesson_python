@@ -38,3 +38,8 @@ for i in num:
 str = input().rstrip().split()
 for i in str:
  print(i)
+
+#1000回数値を受け取る
+for i in range(1000):
+  num = int(input())
+  print(num)
