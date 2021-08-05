@@ -10,3 +10,9 @@ for i in range(num):
 n = input()
   if i == 8:
     print(n)
+#↓↓↓描き直し
+num = int(input())
+for i in range(num):
+  n = input()
+  if i == 7:
+    print(n)
