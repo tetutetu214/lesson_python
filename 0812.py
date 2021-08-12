@@ -45,3 +45,28 @@ list = [1, 2, 3, 4, 5, 6, 7, 8,]
 slice = list[::-1]
 print(slice)
 
+#ここからは辞書型{}苦手だったハッシュを利用していこう
+#辞書ではappendを利用しなくても代入する事ができる
+#なぜならシーケンス要素ではないからである
+#シーケンスとは順番という意味で、配列は順番に意味があったが、
+#{}辞書型には順番という概念はない。なのでappendを利用できないが正しい
+profile = {"mail": "mail@xxx.xxx", "name": "Bob", "address": "Tokyo"}
+profile["phone"] = "0120XXXXXX"
+print(profile)
+
+profile_number = profile["phone"]
+print(profile_number)
+
+#profileの辞書の中にあるKeyを出力する（左側の、mail,name,address,phone）
+print(profile.key())
+#profileの中にあるValueを出力する
+print(profile.values())
+#profileのitemsを利用するという意味（左をk、右をv）にして出力
+#キー{}のなかに k が出力され、値も同様に出力される
+for k,v in profile.items():
+	print("キー: {}, 値:{}",format(k,v))
+
+#辞書型の削除方法はpopではない、それもシーケンスではないからという理由
+del profile["name"]
+print(profile)
+
