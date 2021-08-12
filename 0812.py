@@ -95,4 +95,15 @@ person = {"Bob": "male", "Jon": "male", "Adele": "female", "Jessica": "female"}
 dear = [str("Mr.") + k] if v == "male" else str("MS." + k) for k,v in person.items()]
 print dear
 
-
+#Paiza
+N = int(input())
+for _ in range(N):
+    s_a = input().split()
+    print(s_a[0], int(s_a[1]) + 1)
+#リストにいれるのに、二つの値にわざわざ含んでいる部分がNG
+#まずリストに入れてから数値をこねくりまわそう
+num = input()
+for i in num:
+    name,age = input().split()
+    reage = int(age) + 1
+    print(name,reage)
