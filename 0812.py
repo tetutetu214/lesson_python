@@ -70,3 +70,23 @@ for k,v in profile.items():
 del profile["name"]
 print(profile)
 
+#配列リストを深ぼる
+#for前の数式を行い、リストに反映するコード。ただの2倍にするだけど
+list = [1, 2, 3, 4]
+double = [x * 2 for x in list]
+print(double)
+
+#もっと進化させる
+#2倍して、それが2で割り切れる場合の値をevenに代入する
+#この場合は、doubleで[2,4,6,8]になっており、そこから2で割り切れるものを出力となるので[4,8]が出力される
+list = [1, 2, 3, 4]
+double = [x * 2 for x in list]
+even = [x * 2 for x in list if x % 2 == 0]
+#これはif文が一つのコードに含まれている
+#xが2で割った際あまりの奇数であった場合は0を掛ける
+#else でそれ以外（偶数）の場合は2を掛ける
+odd = [x * 0 if x % 2 == 1 else x * 2 for x in list]
+print(odd)
+
+
+
