@@ -88,5 +88,11 @@ even = [x * 2 for x in list if x % 2 == 0]
 odd = [x * 0 if x % 2 == 1 else x * 2 for x in list]
 print(odd)
 
+#辞書型を深ぼる
+person = {"Bob": "male", "Jon": "male", "Adele": "female", "Jessica": "female"}
+#if文で男だった場合はMrをつける else 違う場合はMs
+#for文で繰り返しをおこなう
+dear = [str("Mr.") + k] if v == "male" else str("MS." + k) for k,v in person.items()]
+print dear
 
 
