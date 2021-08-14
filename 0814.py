@@ -41,3 +41,33 @@ avarage = sum(student.values()) / len(student)
 student = sorted(student.item(), key=lambda x: x[1], reverse=True)
 for s in student:
   print("名前: {}, 点数: {}".format(s[0],s[1]))
+
+#ここからはオブジェクト指向をいってみよう。難しい名前だけど、部品は外から借りてくる的な考え方。おもちゃは玩具箱、飲み物は冷蔵庫（箱）という餅は餅屋的な考え方。
+
+#借りるのに必要な作法
+import src.user
+#importする際のおまじない、importするぞ宣言
+if __name__ == '__main__'
+
+  u = src.user.User('Taro')
+  u.hello()
+
+#別のページ（src.user.pyには、、、）
+class User:
+
+  def __init__(self, name):
+    self.name = name
+
+  def hello(self):
+    print("Hello, {}".format(self.name))
+
+if __name__ == '__main__':
+  u = User("Hanako")
+  u.hello()
+
+#別のページ長かったけど一部しか利用しないよの場合だと
+from src.user import User
+
+#でも今回はUserの箱しかないので省略(別名)でもよさそうだ
+import src.user as my_user
+
