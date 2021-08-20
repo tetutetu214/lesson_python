@@ -18,3 +18,5 @@ git commit -m 'テキスト内容を追加しました'
 git log
 
 git push   #ローカルをリモートへ反映する
+
+git
