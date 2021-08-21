@@ -95,3 +95,41 @@ inamurateppei@mbp myweb % git restore index.html
 inamurateppei@mbp myweb % cat index.html
 line1
 inamurateppei@mbp myweb %
+
+# vimでLine2を追加してみました
+inamurateppei@mbp myweb % vim index.html
+inamurateppei@mbp myweb % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+#git diffを利用することでローカルの状態であればdiff
+inamurateppei@mbp myweb % git diff
+diff --git a/index.html b/index.html
+index a29bdeb..c0d0fb4 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,2 @@
+ line1
++line2
+inamurateppei@mbp myweb % git add index.html
+inamurateppei@mbp myweb % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+#コミットしたら diff --cachedにコマンドが変更してdiffを検出する
+inamurateppei@mbp myweb % git diff --cached
+diff --git a/index.html b/index.html
+index a29bdeb..c0d0fb4 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,2 @@
+ line1
++line2
+inamurateppei@mbp myweb %
