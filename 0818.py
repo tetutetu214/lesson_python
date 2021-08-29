@@ -12,3 +12,12 @@ print(a * b)
 
 num = [int(x) for x in input().split()]
 print(sum(num))
+
+num = [int(x) for x in input().split()]
+print(max(num))
+
+a, b = map(int, input().split())
+if a > b:
+	print a
+	else:
+	print b

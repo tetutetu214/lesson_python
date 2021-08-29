@@ -14,3 +14,14 @@ print(str[2])
 time = int(input())
 num = 24 - time
 print(num)
+
+#方法1 受け取りの値が複数で決まっていない
+num = [int(x) for x in input().split()]
+print(max(num))
+
+#方法2 受け取りの値が決まっている（今回2つ）
+a, b = map(int, input().split())
+if a > b:
+  print(a)
+else:
+  print(b)
