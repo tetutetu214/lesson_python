@@ -7,3 +7,8 @@ for i in range(num):
 a = int(input())
 b = int(input())
 print(a * b)
+
+#複数の文字列を受け取り整数としてリスト
+
+num = [int(x) for x in input().split()]
+print(sum(num))
