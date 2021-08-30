@@ -17,3 +17,6 @@ if num[0] % num[1] == 0:
   print("Yes")
 else:
   print("No")
+
+num = [int(x) for x in input().split()]
+print(int(sum(num)/len(num)))
