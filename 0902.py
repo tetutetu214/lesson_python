@@ -35,3 +35,11 @@ n = int(input())
 num = [int(x) for x in input().split()]
 for i in num:
 	print(i%10)
+
+#リストの値が3で割り切れるなら表示する
+n = int(input())
+num = [int(x) for x in input().split()]
+for i in num:
+	div = i % 3
+	if div == 0:
+		print(i)
