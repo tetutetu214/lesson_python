@@ -29,3 +29,9 @@ mul = 1
 for i in num:
 	mul *= i
 print(mul)
+
+#1桁目を表示する
+n = int(input())
+num = [int(x) for x in input().split()]
+for i in num:
+	print(i%10)
