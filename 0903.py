@@ -10,3 +10,4 @@ n = int(input())
 st = [input() for i in range(n)]
 result = "".join(i[0] for i in st)
 print(result)
+
