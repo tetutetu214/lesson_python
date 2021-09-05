@@ -10,6 +10,8 @@ else:
   print('same')
 
 
+
+
 a,b = map(int, input().split())
 num = [int(x) for x in input().split()]
 if b in num:
