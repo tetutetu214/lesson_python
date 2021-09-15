@@ -29,3 +29,17 @@ for i in range(N):
 
 if flag:print("Yes")
 else:print("No")
+
+S = input()
+N = len(S)
+A = S[::-1]
+
+flag = False
+for i in range(N):
+	if S[i] == A[i]:
+		flag = True
+	else:
+		flag = False
+
+if flag:print("Yes")
+else:print("No")
