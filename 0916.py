@@ -17,3 +17,15 @@ for i in range(1,N+1):
       print("Buzz")
   else:
       print(i)
+
+S = input()
+c = input()
+N = len(S)
+
+flag = False
+for i in range(N):
+  if S[i] == c:
+      flag = True
+
+if flag:print("Yes")
+else:print("No")
