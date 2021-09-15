@@ -56,3 +56,12 @@ for i in range(N):
 
 if flag:print("Yes")
 else:print("No")
+
+S = input()
+l = len(S)
+
+count = 0
+for i in range(l):
+	if S[i-1] == S[i]:
+		count += 1
+print(count)
