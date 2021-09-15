@@ -43,3 +43,16 @@ for i in range(N):
 
 if flag:print("Yes")
 else:print("No")
+
+#上記を改良したバージョン
+S = input()
+N = len(S)
+A = S[::-1]
+
+flag = True
+for i in range(N):
+	if S[i] != A[i]:
+		flag = False
+
+if flag:print("Yes")
+else:print("No")
