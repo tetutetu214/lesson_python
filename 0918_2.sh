@@ -5,7 +5,7 @@ echo "=== userprofile ==="
 ROOT_DIR=/var/www/PhotoApp/iwphoto
 RAILS_SERVE_STATIC_FILES=1
 UNI_DIR=/home/ec2-user/.rbenv/shims/unicorn_rails
-CMD=${UNI_DIR} -c config/unicorn.rb -E production -D
+CMD="${UNI_DIR} -c config/unicorn.rb -E production -D"
 
 echo "=== unicorncommand ==="
 cd $ROOT_DIR && $CMD
