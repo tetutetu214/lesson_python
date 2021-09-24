@@ -22,3 +22,13 @@ for i in range(N):
         
         #sosuu_count += 1
 #print(sosuu_count)
+
+N=int(input())
+A=[int(x) for x in input().split()]
+
+count = 0
+for i in A:
+  for x in(2,i-1):
+    if x % i == 0:
+      count += 1
+print(count)
