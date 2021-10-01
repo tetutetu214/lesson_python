@@ -11,4 +11,5 @@ for x in range(L,R+1):
 			flag = False
 	if flag:
 		count += 1
+		
 print(count)
